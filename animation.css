@@ -1,0 +1,26 @@
+/* 
+gitrengeki website styling
+Created by: GitRengeki
+Date Created: 24/02/2022 
+*/
+
+@keyframes onload{
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+
+/* Hover Animation */
+
+.nav-bar ul li:hover{
+    border: .5px solid var(--green);
+    background-color: var(--green);
+  }
+  
+.nav-bar ul li:hover > a{
+    color: var(--default);
+  }
