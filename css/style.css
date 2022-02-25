@@ -1,0 +1,78 @@
+/* Rengeki Portfolio */
+/* Date Created: 25/02/2022 */
+/* GitRengeki.github.io */
+
+
+/* Variables */
+:root{
+    --main: #151f28;
+    --darkmain: #0f161d;
+}
+
+/* Universal Selectors */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.obsolete{
+    user-select: none;
+    pointer-events: none;
+}
+
+/* Body Selectors */
+body{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-image: url(/webdevelopment/gitrengeki.github.io/svg/mainbg.png);
+    background-position: top center;
+    background-color: var(--main);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.profile{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    padding: 2rem 0;
+}
+
+.profile::before{
+    content: '';
+    position: absolute;
+    background-color: var(--darkmain);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 50%;
+    z-index: -1;
+}
+
+.profile a{
+    position: relative;
+    text-decoration: none;
+    color: #0f161d;
+    background-color: #fff;
+    padding: 1.4rem 4.9rem;
+    margin: 1.5rem 0;
+    border-radius: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    z-index: 2;
+    transition: 1s ease-out all;
+}
+
+.profile a:hover{
+    opacity: 90%;
+    background-color: #151f28;
+    color: #fff;
+}
